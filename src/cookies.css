@@ -1,0 +1,112 @@
+--root {
+    --regular: 400;
+    --family: 'Raleway', serif;
+    --ten: 10px;
+    --offset: 20px;
+    --full: 100%;
+    --null: 0;
+    --ctr: center;
+    --fa: #F2EDED;
+    --back: #B7957F;
+    --black: #212020;
+    --f4: #F4F2F2;
+    --lora: 'Lora', serif;
+    --primary: #D7BDA6;
+    --hover: #E1C19B;
+}
+
+.cookie,
+.change-mind {
+    position: fixed;
+    bottom: 0;
+    left: var(--ten);
+    width: fit-content;
+    height: fit-content;
+    transform: translateY(var(--full));
+    transition: transform 0.3s ease-in-out;
+}
+
+.cookie .container {
+    margin-bottom: var(--ten);
+    padding: var(--offset);
+    max-width: var(--full);
+    height: var(--full);
+    border-radius: var(--radius);
+    background-color: var(--black);
+    opacity: 0.8;
+}
+
+.cookies-txt {
+    font-size: 16px;
+    margin-bottom: var(--ten);
+    font-weight: var(--regular);
+    font-family: var(--family);
+    color: var(--fa);
+}
+
+.privacy {
+    color: var(--back);
+    font-weight: 600;
+}
+
+.buttons {
+    font-size: 14px;
+    text-align: var(--ctr);
+    color: var(--black);
+}
+      
+.tap {
+    padding: 5px var(--ten);
+    max-width: fit-content;
+    font-family: var(--lora);
+    background-color: var(--f4);
+    border-radius: 3px;
+    max-width: fit-content;
+    background-color: var(--primary);
+    color: var(--black);
+    transition: all .3s ease-in-out;
+}
+
+.tap:first-of-type {
+    margin-right: var(--offset);
+}
+
+.tap:hover {
+    background-color: var(--hover);
+}
+
+.tap:active {
+    background-color: #CC9767;
+}
+
+.change-btn {
+    background-color: var(--black);
+    font-family: var(--lora);
+    margin-bottom: var(--ten);
+    font-weight: var(--regular);
+    font-family: var(--family);
+    color: var(--fa);
+}
+
+#change:hover {
+    background-color: #363333;
+}
+
+#change:active {
+    background-color: var(--back);
+    color: var(--black);
+}
+
+.visible {
+    transform: translateY(var(--null));
+}
+
+.cookie--visible {
+    transform: translateY(var(--null));
+}
+
+@media (max-width: 480px) {
+    .cookie {
+        right: 10px;
+    }
+}
