@@ -59,7 +59,17 @@ Start development server: <br>
 Build:
 `npm run build` <br>
 
-You also can add custom colors by replacing color1-color5 in style.css file. <br>
+You also can add custom colors by replacing default. <br>
+Example: <br>
+Just write your custom color for buttons, background, link and text in `initCookiesAgreement()` function (add an object with colors properties). Check it out!<br>
+```
+initCookiesAgreement({
+    color1: '#111111',
+    color2: '#ff9800',
+    color3: '#ffffff',
+    hover: '#ff5722'
+});
+```
 
 Project Structure <br>
 ```
