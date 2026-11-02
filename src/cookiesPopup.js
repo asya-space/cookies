@@ -5,6 +5,7 @@ const CONSENT = {
     ACCEPTED: 'accepted',
     REJECTED: 'rejected'
 }
+const STORAGE_KEY = 'cookies-popup-consent';
 
 function getCookie(name) {
     const cookies  = document.cookie.split('; ');
@@ -28,6 +29,10 @@ function enableAnalytics() {
 
 export function initCookiesAgreement() {
     if (document.cookie.includes('cookiesConsent=true')) return;
+
+    const consent = localStorage.getItem(STORAGE_KEY);
+    if (consent) return;
+
     document.body.insertAdjacentHTML('beforeend', template);
 
     const banner = document.querySelector('.cookie');
@@ -67,4 +72,8 @@ export function initCookiesAgreement() {
             document.querySelector('.change-mind').classList.remove('visible');
         })
     };
+}
+
+export function resetPrevCookies() {
+    localStorage.removeItem(STORAGE_KEY);
 }
