@@ -27,7 +27,49 @@ function enableAnalytics() {
     console.log('Analytics is turned on 📈');
 }
 
-export function initCookiesAgreement() {
+export function initCookiesAgreement(options = {}) {
+    if (options.color1) {
+        document.documentElement.style.setProperty(
+            '--color1',
+            options.color1
+        );
+    }
+
+    if (options.color2) {
+        document.documentElement.style.setProperty(
+            '--color2',
+            options.color2
+        );
+    }
+
+    if (options.color3) {
+        document.documentElement.style.setProperty(
+            '--color3',
+            options.color3
+        );
+    }
+
+    if (options.color4) {
+        document.documentElement.style.setProperty(
+            '--color4',
+            options.color4
+        );
+    }
+
+    if (options.color5) {
+        document.documentElement.style.setProperty(
+            '--color5',
+            options.color5
+        );
+    }
+
+    if (options.hover) {
+        document.documentElement.style.setProperty(
+            '--hover',
+            options.hover
+        );
+    }
+
     if (document.cookie.includes('cookiesConsent=true')) return;
 
     const consent = localStorage.getItem(STORAGE_KEY);
