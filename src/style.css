@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --regular: 400;
+    --raleway: 'Raleway', serif;
+    --lora: 'Lora', serif;
+    --radius: 9px;
+    --ten: 10px;
+    --offset: 20px;
+    --full: 100%;
+    --null: 0;
+    --ctr: center;
+    --color1: #F2EDED;
+    --color2: #B7957F;
+    --color3: #212020;
+    --color4: #F4F2F2;
+    --color5: #D7BDA6;
+    --hover: #efb773;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie,
+.change-mind {
+    position: fixed;
+    bottom: 0;
+    left: var(--ten);
+    width: fit-content;
+    height: fit-content;
+    transform: translateY(var(--full));
+    transition: transform 0.3s ease-in-out;
+}
+
+.cookie .container {
+    margin-bottom: var(--ten);
+    padding: var(--offset);
+    max-width: var(--full);
+    height: var(--full);
+    border-radius: var(--radius);
+    background-color: var(--color3);
+    opacity: 0.8;
+}
+
+.cookies-txt {
+    font-size: 16px;
+    margin-bottom: var(--ten);
+    font-weight: var(--regular);
+    font-family: var(--raleway);
+    color: var(--color1);
+}
+
+.privacy {
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.buttons {
+    font-size: 14px;
+    text-align: var(--ctr);
+    color: var(--color3);
+}
+      
+.tap {
+    padding: 5px var(--ten);
+    max-width: fit-content;
+    font-family: var(--lora);
+    background-color: var(--color4);
+    border-radius: 3px;
+    max-width: fit-content;
+    background-color: var(--color5);
+    color: var(--color3);
+    transition: all .3s ease-in-out;
+}
+
+.tap:first-of-type {
+    margin-right: var(--offset);
+}
+
+.tap:hover {
+    background-color: var(--hover);
+}
+
+.tap:active {
+    background-color: #CC9767;
+}
+
+.change-btn {
+    background-color: var(--color3);
+    margin-bottom: var(--ten);
+    padding: 5px 10px;
+    font-weight: var(--regular);
+    font-family: var(--raleway);
+    color: var(--color1);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#change:hover {
+    background-color: #757272;
+}
+
+#change:active {
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+.visible {
+    transform: translateY(var(--null));
+}
+
+.cookie--visible {
+    transform: translateY(var(--null));
+}
+
+@media (max-width: 480px) {
+    .cookie {
+        right: 10px;
+    }
+}
