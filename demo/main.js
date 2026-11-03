@@ -3,5 +3,5 @@ import '../src/style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
    resetPrevCookies();
-   initCookiesAgreement();
+   initCookiesAgreement({privacyUrl: 'https://google.com'});
 })

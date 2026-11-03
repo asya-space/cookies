@@ -36,7 +36,7 @@ import { resetPrevCookies, initCookiesAgreement } from 'cookies-popup';
 
 document.addEventListener('DOMContentLoaded', () => {
     resetPrevCookies(); // <=
-    initCookiesAgreement();
+    initCookiesAgreement({privacyUrl: '/privacy-policy'});
 });
 ```
 or just like this:
@@ -44,7 +44,7 @@ or just like this:
 import { resetPrevCookies, initCookiesAgreement } from 'cookies-popup';
 
 resetPrevCookies(); // <=
-initCookiesAgreement();
+initCookiesAgreement({privacyUrl: '/privacy-policy'});
 ```
 ## Development 
 Clone the repository: <br>
@@ -64,9 +64,11 @@ Example: <br>
 Just write your custom color for buttons, background, link and text in `initCookiesAgreement()` function (add an object with colors properties). Check it out!<br>
 ```
 initCookiesAgreement({
-    color1: '#111111',
-    color2: '#ff9800',
-    color3: '#ffffff',
+    privacyUrl: '/privacy-policy', // your custom link to Privacy Security rules
+    color1: '#111111', // text color
+    color2: '#ff9800', // link color (Privacy and Policy)
+    color3: '#ffffff', // background
+    color4: '#fafa28' // buttons
     hover: '#ff5722'
 });
 ```

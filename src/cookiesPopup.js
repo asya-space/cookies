@@ -28,6 +28,8 @@ function enableAnalytics() {
 }
 
 export function initCookiesAgreement(options = {}) {
+    const privacyUrl = options.privacyUrl || '#';
+
     if (options.color1) {
         document.documentElement.style.setProperty(
             '--color1',
@@ -75,7 +77,7 @@ export function initCookiesAgreement(options = {}) {
     const consent = localStorage.getItem(STORAGE_KEY);
     if (consent) return;
 
-    document.body.insertAdjacentHTML('beforeend', template);
+    document.body.insertAdjacentHTML('beforeend', template(privacyUrl));
 
     const banner = document.querySelector('.cookie');
     const acceptBtn = document.querySelector('#accept');
