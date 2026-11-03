@@ -13,8 +13,7 @@
     --color1: #F2EDED;
     --color2: #B7957F;
     --color3: #212020;
-    --color4: #F4F2F2;
-    --color5: #D7BDA6;
+    --color4: #D7BDA6;
     --hover: #efb773;
 }
 
@@ -71,7 +70,6 @@ button {
     background-color: var(--color4);
     border-radius: 3px;
     max-width: fit-content;
-    background-color: var(--color5);
     color: var(--color3);
     transition: all .3s ease-in-out;
 }
@@ -108,12 +106,10 @@ button {
     color: var(--color3);
 }
 
+.cookie--visible,
 .visible {
     transform: translateY(var(--null));
-}
-
-.cookie--visible {
-    transform: translateY(var(--null));
+    z-index: 100;
 }
 
 @media (max-width: 480px) {
