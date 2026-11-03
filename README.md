@@ -15,7 +15,10 @@ Demo: <br>
 ## Installation
 Install from GitHub:
 
-`npm install git+https://github.com/asya-space/cookies.git`
+`npm install git+https://github.com/asya-space/cookies.git`<br>
+
+Install with cmd:<br>
+`npm install cookies-popup`<br>
 
 Usage
 ```
