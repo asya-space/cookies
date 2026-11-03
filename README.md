@@ -2,7 +2,8 @@
 A lightweight cookie consent popup for modern JavaScript applications.<br>
 
 Demo: <br>
-<img width="50%" height="325" alt="cookies" src="https://github.com/user-attachments/assets/2e16b13d-4713-4c54-927b-0f7572284289" />
+<img width="100%" height="897" alt="image" src="https://github.com/user-attachments/assets/6bf1853a-2bbf-4d92-a670-9820d9770a9f" />
+
 
 
 ## Features
