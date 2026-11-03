@@ -72,6 +72,13 @@ export function initCookiesAgreement(options = {}) {
         );
     }
 
+    if (options.active) {
+        document.documentElement.style.setProperty(
+            '--active',
+            options.active
+        );
+    }
+
     if (document.cookie.includes('cookiesConsent=true')) return;
 
     const consent = localStorage.getItem(STORAGE_KEY);

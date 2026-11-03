@@ -73,6 +73,7 @@ initCookiesAgreement({
     color3: '#ffffff', // background
     color4: '#fafa28' // buttons
     hover: '#ff5722'
+    active: 'your custom color'
 });
 ```
 

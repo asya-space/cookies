@@ -15,6 +15,7 @@
     --color3: #212020;
     --color4: #D7BDA6;
     --hover: #efb773;
+    --active: #CC9767;
 }
 
 button {
@@ -83,7 +84,7 @@ button {
 }
 
 .tap:active {
-    background-color: #CC9767;
+    background-color: var(--active);
 }
 
 .change-btn {
