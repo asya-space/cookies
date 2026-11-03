@@ -99,7 +99,7 @@ button {
 }
 
 #change:hover {
-    background-color: #757272;
+    background-color: var(--hover);
 }
 
 #change:active {
